@@ -27,8 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:text="Welcome"
-                android:textSize="20sp" />
+                android:text="@string/welcome"
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:id="@+id/linearLayout_list"
@@ -63,7 +63,7 @@
                     android:layout_gravity="center_horizontal|center"
                     android:background="#5151CC"
                     android:onClick="createItem"
-                    android:text="Add item"
+                    android:text="@string/addButton"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF" />
             </LinearLayout>

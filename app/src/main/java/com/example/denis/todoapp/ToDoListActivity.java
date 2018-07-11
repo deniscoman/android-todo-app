@@ -24,7 +24,7 @@ public class ToDoListActivity extends AppCompatActivity {
         Intent caller = getIntent();
         String name = caller.getStringExtra("name");
         TextView nameTextView = (TextView) findViewById(R.id.textView_name);
-        nameTextView.setText("Welcome "+ name + "! Here is your to do list");
+        nameTextView.setText(getString(R.string.welcome)+" " + name+ "! " + getString(R.string.message));
 
 
     }
@@ -41,12 +41,12 @@ public class ToDoListActivity extends AppCompatActivity {
             public void onClick(View view) {
                if(checkBox.isChecked()){
                    Toast.makeText(getApplicationContext(),
-                           checkBox.getText().toString() + " checked",
+                           checkBox.getText().toString() +" "+ getString(R.string.checked),
                            Toast.LENGTH_SHORT).show();
                }
                else{
                    Toast.makeText(getApplicationContext(),
-                           checkBox.getText().toString() + " unchecked",
+                           checkBox.getText().toString() +" "+ getString(R.string.unchecked),
                            Toast.LENGTH_SHORT).show();
                }
             }
@@ -54,6 +54,6 @@ public class ToDoListActivity extends AppCompatActivity {
         listLinearLayout.addView(checkBox);
 
         itemEditText.setText("");
-        Toast.makeText(getApplicationContext(),item+ " created", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),item+ " " + getString(R.string.created), Toast.LENGTH_SHORT).show();
     }
 }

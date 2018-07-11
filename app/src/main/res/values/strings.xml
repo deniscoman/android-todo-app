@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ToDo App</string>
+    <string name="welcome">Welcome</string>
+    <string name="message">Here is a list with your items</string>
+    <string name="addButton">Add item</string>
+    <string name="created">created</string>
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
+    <string name="firstMessage">Enter your name bellow</string>
+    <string name="createList">Create List</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="welcome">Bine ai venit </string>
+    <string name="message">Aici este o lista cu toate activitatile</string>
+    <string name="addButton">Adauga activitate</string>
+    <string name="created">creat</string>
+    <string name="checked">bifat</string>
+    <string name="unchecked">debifat</string>
+    <string name="firstMessage">Adaugati-va numele</string>
+    <string name="createList">Creaza lista</string>
+</resources>
