@@ -1,6 +1,7 @@
 package com.example.denis.todoapp;
 
 import android.content.Intent;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.invoke.ConstantCallSite;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,7 @@ public class ToDoListActivity extends AppCompatActivity {
     public void createItem(View view) {
         EditText itemEditText = (EditText) findViewById(R.id.editText_item);
         String item = itemEditText.getText().toString();
-        LinearLayout listLinearLayout = (LinearLayout) findViewById(R.id.linearLayout_list);
+        LinearLayout linearLayoutList = (LinearLayout) findViewById(R.id.linearLayout_list);
 
         final CheckBox checkBox = new CheckBox(this);
         checkBox.setText(item);
@@ -51,7 +53,7 @@ public class ToDoListActivity extends AppCompatActivity {
                }
             }
         });
-        listLinearLayout.addView(checkBox);
+        linearLayoutList.addView(checkBox);
 
         itemEditText.setText("");
         Toast.makeText(getApplicationContext(),item+ " " + getString(R.string.created), Toast.LENGTH_SHORT).show();
